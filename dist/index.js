@@ -100,8 +100,8 @@ async function installWrapper (pathToCLI) {
   }
 
   // Export a new environment variable, so our wrapper can locate the binary
-  core.debug(`Setting TERRAFORM_CLI_PATH to ${pathToCLI}.`);
-  core.exportVariable('TERRAFORM_CLI_PATH', pathToCLI);
+  core.debug(`Setting TERRAGRUNT_CLI_PATH to ${pathToCLI}.`);
+  core.exportVariable('TERRAGRUNT_CLI_PATH', pathToCLI);
 
   return wrapperPath;
 }

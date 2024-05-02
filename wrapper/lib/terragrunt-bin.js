@@ -14,5 +14,5 @@ module.exports = (() => {
   // If we're on Windows, then the executable ends with .exe
   const exeSuffix = os.platform().startsWith('win') ? '.exe' : '';
 
-  return [process.env.TERRAFORM_CLI_PATH, `terragrunt${exeSuffix}`].join(path.sep);
+  return [process.env.TERRAGRUNT_CLI_PATH, `terragrunt${exeSuffix}`].join(path.sep);
 })();
